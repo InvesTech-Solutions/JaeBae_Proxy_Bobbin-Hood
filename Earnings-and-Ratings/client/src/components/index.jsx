@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './app.jsx';
 import styles from './../../dist/build/styles.min.css';
 
-class Index extends React.Component {
+class EarningsRatings extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -18,4 +18,4 @@ class Index extends React.Component {
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById('app'))
+window.EarningsRatings = EarningsRatings;

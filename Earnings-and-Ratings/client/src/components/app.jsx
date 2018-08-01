@@ -23,13 +23,13 @@ class App extends React.Component {
     // for now, send a request to get fake data from server
     let that = this;
     $.ajax({
-      url: '/createExample',
+      url: 'http://localhost:3036/createExample',
       type: 'GET',
       contentType: 'application/json',
       success: (data) => {
         // once example data created, do another AJAX to get the data
         $.ajax({
-          url: '/getExample',
+          url: 'http://localhost:3036/getExample',
           type: 'GET',
           contentType: 'application/json',
           success: (data) => {
