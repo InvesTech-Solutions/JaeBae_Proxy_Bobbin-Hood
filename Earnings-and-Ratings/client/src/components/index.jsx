@@ -18,4 +18,5 @@ class EarningsRatings extends React.Component {
   }
 }
 
+ReactDOM.render(React.createElement(EarningsRatings), document.getElementById('EarningsRatings'))
 window.EarningsRatings = EarningsRatings;

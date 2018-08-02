@@ -51,7 +51,8 @@
     "test": "jest --watch",
     "test:coverage": "jest --coverage",
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js & babel client/src/components --watch --out-dir client/src/specs --presets=env,react --ignore=node_modules,compiled --source-maps inline"
+    "start": "nodemon server/index.js & babel client/src/components --watch --out-dir client/src/specs --presets=env,react --ignore=node_modules,compiled --source-maps inline",
+    "startContainer" : "node server/index.js"
   },
   "repository": {
     "type": "git",
