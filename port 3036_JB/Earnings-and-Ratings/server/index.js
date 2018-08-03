@@ -4,10 +4,10 @@ const path = require('path');
 const db = require('../database/db');
 const faker = require('faker');
 
-let port = 3036;
+let port = process.env.PORT || 3004;
 let app = express();
 
-app.use(express.static(__dirname + '/../client/dist/'));
+app.use('/:id', express.static(__dirname + '/../client/dist/'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((req, res, next) => {
@@ -16,9 +16,8 @@ app.use((req, res, next) => {
  next();
 });
 
-app.get('/createExample', (req, res) => {
+app.get('/createExample/:id', (req, res) => {
   // some constants
-
   let output;
   const quarters = ['Q4 2016', 'Q1 2017', 'Q2 2017', 'Q3 2017', 'Q4 2017', 'Q1 2018', 'Q2 2018'];
   const ratingState = ['Buy', 'Hold', 'Sell'];
@@ -130,7 +129,7 @@ app.get('/createExample', (req, res) => {
   });
 });
 
-app.get('/getExample', (req, res) => {
+app.get('/getExample/:id', (req, res) => {
   // now organize data from database and send it back to the client;
   // need to provide
   let object = {};
@@ -142,7 +141,7 @@ app.get('/getExample', (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      index = Math.round(data.length * Math.random() - 1);
+      index = Number(req.params.id) - 1;
       selected = data[index];
       object.id = selected.id;
       object.name = selected.name;

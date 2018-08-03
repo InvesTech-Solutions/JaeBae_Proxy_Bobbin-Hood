@@ -8,6 +8,6 @@ COPY . /src/app
 
 RUN npm install
 
-EXPOSE 3036
+EXPOSE 3004 3306
 
 CMD [ "npm", "run", "startContainer" ]
