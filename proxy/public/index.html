@@ -3,19 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.min.css">
-    <title>FEC Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./richelle.min.css">
+    
+    <title>Friar Tuck</title>
   </head>
   <body>
+    <div id="maingraph"></div>
     <div id="earningsratings"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3036/build/bundle.min.js"></script>
+    <div id="suggested"></div>
+    <div id="purchase"></div>
+
+    <script src="lib/react.development.js"></script>
+    <script src="lib/react-dom.development.js"></script>
+    <script src="http://ec2-34-221-97-94.us-west-2.compute.amazonaws.com:3004/2/build/bundle.min.js"></script>
+    <script src="http://ec2-18-220-173-196.us-east-2.compute.amazonaws.com:8080/built.min.js"></script>
+    <script src="http://18.222.146.103:3009/dist/grunt/bundle.min.js"></script>
+    <script src="http://34.216.236.227:3001/build/bundle.min.js"></script>
+
+
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+
+  </body>
     <script>
+
+let selectedProxyId = location.pathname.split('/')[1];
+console.log(selectedProxyId);
 ReactDOM.render(
-  React.createElement(EarningsRatings),
+  React.createElement(MainGraph, {id: selectedProxyId}),
+  document.getElementById('maingraph')
+);
+ReactDOM.render(
+  React.createElement(EarningsRatings, {pId: selectedProxyId}),
   document.getElementById('earningsratings')
 );
+ReactDOM.render(
+  React.createElement(SuggestedStock),
+  document.getElementById('suggested')
+);
+ReactDOM.render(
+  React.createElement(StockPurchase, {id: selectedProxyId}),
+  document.getElementById('purchase')
+);
     </script>
-  </body>
 </html>

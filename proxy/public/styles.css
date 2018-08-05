@@ -1,0 +1,20 @@
+#purchase {
+  left: 600px;
+}
+
+#earningsratings {
+  position: absolute;
+  top: 500px;
+}
+
+#suggested {
+  position: absolute;
+  top: 1400px;
+  justify-content: center;
+  flex-direction: center;
+}
+
+#themain {
+  display: flex;
+
+}

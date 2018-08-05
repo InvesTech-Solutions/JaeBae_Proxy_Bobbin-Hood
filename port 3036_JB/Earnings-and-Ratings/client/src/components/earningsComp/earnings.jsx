@@ -17,7 +17,6 @@ class Earnings extends Component {
 
   componentDidUpdate () {
     // process data to create arrays used for y-axis (min to max, length of 4) and x-axis (quarterlies)
-    console.log(styles)
     let filtered = this.props.estimatedEarnings.concat(this.props.actualEarnings).filter((element) => {
       return element[0] === '$';
     });

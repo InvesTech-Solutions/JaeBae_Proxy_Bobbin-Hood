@@ -13,10 +13,9 @@ class EarningsRatings extends React.Component {
 
   render () {
     return (<div>
-     <App/>
-    </div>)
+     <App pId={this.props.pId}/>
+    </div>);
   }
 }
-
-ReactDOM.render(React.createElement(EarningsRatings), document.getElementById('EarningsRatings'))
+console.log('gruntingthis')
 window.EarningsRatings = EarningsRatings;
