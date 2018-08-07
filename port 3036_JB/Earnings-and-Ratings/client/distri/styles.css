@@ -1,0 +1,393 @@
+#summaryComponent {
+  font-family: Arial;
+
+}
+
+#tagContainer {
+  display : inline-block;
+  width : 210px;
+  height : 343.56px;
+  padding-left : 4.11px;
+  padding-right : 4.11px;
+}
+
+#tagSvg {
+  width : 14px;
+  height : 14px;
+}
+
+.tagHead {
+  padding-bottom : 10px;
+  font-size : 25px;
+  width : 680.01px;
+  border-bottom : 1px solid black;
+}
+
+.circleBase {
+  position : relative;
+  left :18%;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background: #d7f7e7;
+}
+
+.tagContentHead {
+  position : relative;
+  font-size : 24px;
+  left : 26%;
+  top : 33%;
+  color : #4fc189;
+}
+
+.tagContentPara {
+  position : relative;
+  font-size : 14px;
+  text-align : center;
+  top : 20%;
+  color : #4fc189;
+}
+
+.bars {
+  position : absolute;
+  left: 232px;
+  top: 72px;
+}
+
+.barRow {
+  padding-bottom : 9px;
+}
+
+.barSuggestion {
+  font-size : 13px;
+  color : #4fc189;
+}
+
+.barContain {
+  position : relative;
+  display : inline-block;
+  left : 30px;
+  bottom : 12.5px;
+  width : 426.44px;
+  height : 8px;
+  border-radius : 500px;
+  background-color : #d7f7e7;
+}
+
+.percInBarContain {
+  position : relative;
+  padding-left : 2px;
+}
+
+.coloredBar {
+  position : relative;
+  background-color : #4fc189;
+  height : 8px;
+  bottom : 18px;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+.percInBar {
+  position : relative;
+  font-size : 13.5px;
+  color : #4fc189;
+  bottom : 5px;
+}
+
+#earningsComponent {
+  font-family: Arial;
+  position : relative;
+  top : -300px;
+}
+
+.summaryBoxes {
+  position : relative;
+  font-family: Arial;
+}
+
+#summaryPositionControl_1 {
+  position : relative;
+  z-index : 1;
+}
+
+#summaryBox_0 {
+  position : relative;
+  left : 222px;
+  bottom : 195px;
+  width : 182.22px;
+  height : 160.56px;
+  background-color : #f2f7ff;
+  padding-left : 20px;
+  padding-right : 20px;
+  padding-bottom: 20px;
+  padding-top: 7px;
+}
+
+#summaryBox_1 {
+  position : relative;
+  left : 222px;
+  bottom : 195px;
+  width : 182.22px;
+  height : 160.56px;
+  background-color : #f2f7ff;
+  padding-left : 20px;
+  padding-right : 20px;
+  padding-bottom: 20px;
+  padding-top: 7px;
+}
+
+.summaryTail {
+  position : relative;
+  fill : #f2f7ff;
+
+}
+
+#summaryTail_0 {
+  position : relative;
+  top : 16px;
+  left : 222px;
+}
+
+#summaryTail_1 {
+  position : relative;
+  top : -100px;
+  left : 457px;
+}
+
+#summaryBox_0 {
+  position : relative;
+  display : inline-block;
+}
+
+.summaryHead {
+  font-size : 13px;
+  font-weight: bold;
+}
+
+.fade {
+  font-size : 13px;
+  position: relative;
+  bottom : 8px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.readMore {
+  position: relative;
+  bottom : 6px;
+  color : #4fc189;
+  font-size : 13px;
+  text-decoration: none;
+  z-index : 2;
+}
+
+.summaryFooter {
+  position: relative;
+  color: #8e8e8e;
+  top : 20px;
+  font-size : 13px;
+}
+
+#summaryBox_1 {
+  position : relative;
+  display : inline-block;
+  left : 457px;
+  bottom : 406px;
+}
+
+.head {
+  padding-bottom : 10px;
+  font-size : 25px;
+}
+
+.chartDiv {
+  position: absolute;
+  width : 678.66px;
+  height : 347px;
+  z-index : 1;
+  padding-top : 0px;
+  border-top : 1px solid black;
+}
+
+.chartContainer {
+  position : relative;
+  width : 560px;
+  height : 120px;
+  z-index : 1;
+  float : left;
+}
+
+.dataPoint {
+  z-index : 1;
+}
+
+.ylabel {
+  position : relative;
+  z-index : 1;
+  float : left;
+  font-size : 12px;
+}
+
+.xs {
+  position: absolute;
+  left : 50px;
+  z-index : 1;
+  float : left;
+  padding-left : 30px;
+  padding-top : 30px;
+  padding-bottom : 25px;
+  padding-right : 25px;
+}
+
+.axes {
+  position : relative;
+  height : 100%;
+  z-index : 1;
+}
+
+.jby-4 {
+  position: absolute;
+  top : 0px;
+  right : -100%;
+  z-index : 1;
+  padding-top : 25px;
+}
+
+.jby-3 {
+  position : absolute;
+  top : 40px;
+  right : -100%;
+  z-index : 1;
+  padding-top : 25px;
+}
+
+.jby-2 {
+  position : absolute;
+  top : 80px;
+  right : -100%;
+  z-index : 1;
+  padding-top : 25px;
+}
+
+.jby-1 {
+  position : absolute;
+  top : 120px;
+  right : -100%;
+  z-index : 1;
+  padding-top : 25px;
+}
+
+.jby4{
+  position : absolute;
+  padding.right : 30px;
+}
+
+.jby3{
+  position : absolute;
+  padding.right : 30px;
+}
+
+.jby2{
+  position : absolute;
+  padding.right : 30px;
+}
+
+.jby1{
+  position : absolute;
+  padding.right : 30px;
+}
+
+.xlabel {
+  position : relative;
+  z-index : 1;
+  float : left;
+  top : 210px;
+  font-size : 12px;
+}
+
+.jbx-1 {
+  width: 48px;
+  position : absolute;
+  left : 56px;
+  z-index : 1;
+}
+
+.jbx-2 {
+  width: 48px;
+  position : absolute;
+  left : 149.333px;
+  z-index : 1;
+}
+
+.jbx-3 {
+  width: 48px;
+  position : absolute;
+  left : 242.666px;
+  z-index : 1;
+}
+
+.jbx-4 {
+  width: 48px;
+  position : absolute;
+  left : 335.999px;
+  z-index : 1;
+}
+
+.jbx-5 {
+  width: 48px;
+  position : absolute;
+  left : 429.333px;
+  z-index : 1;
+}
+
+.jbx-6 {
+  width: 48px;
+  position : absolute;
+  left : 522.666px;
+  z-index : 1;
+}
+
+.jbx-7 {
+  width: 48px;
+  position : absolute;
+  left : 616px;
+  z-index : 1;
+}
+
+.descDiv {
+  position : relative;
+  top : 250px;
+  left : 25px;
+  font-size : 12px;
+}
+
+.descEst {
+  float : left;
+  display : inline-block;
+}
+
+.descAct {
+  position : absolute;
+  float : left;
+  display : inline-block;
+  left : 140px;
+  width : 200px;
+}
+
+.descCircle {
+  float : left;
+}
+
+.descText {
+  position : absolute;
+  display : inline-block;
+  top : 6px;
+  padding-left : 10px;
+}
+
+.botText {
+  position : absolute;
+  top : 23px;
+  left : 38px;
+}

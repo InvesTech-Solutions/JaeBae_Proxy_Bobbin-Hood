@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friar Tuck</title>
+  <link rel="stylesheet" href="./build/styles.min.css">
+</head>
+<body>
+	<div id="EarningsRatings">Loading Friar' `Tuck</div>
+  <script src="lib/react.development.js"></script>
+  <script src="lib/react-dom.development.js"></script>
+	<script type="text/javascript" src="./build/bundle.min.js"></script>
+  <script>
+let selectedProxyId = location.pathname.split('/')[1];
+console.log(selectedProxyId);
+console.log(EarningsRatings);
+ReactDOM.render(
+  React.createElement(EarningsRatings, {pId: selectedProxyId}),
+  document.getElementById('EarningsRatings')
+);
+  </script>
+</body>
+</html>
